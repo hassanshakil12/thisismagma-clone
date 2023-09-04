@@ -780,6 +780,33 @@ html, body{
     width: 30%;
     text-transform: uppercase;
     font-size: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.page12 .bottom .left .leftLeft p{
+    width: fit-content;
+}
+
+.page12 .anime{
+    position: relative;
+    cursor: pointer;
+}
+
+.anime::after{
+    content: '';
+    width: 100%;
+    height: 3%;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    bottom: 35%;
+    transform: scale(0, 1);
+    transition: all ease 0.3s;
+}
+
+.anime:hover::after{
+    transform: scale(1, 1);
 }
 
 .page12 .bottom .left .leftLeft p:not(p:last-child){
@@ -808,6 +835,7 @@ html, body{
     font-weight: 600;
     padding-bottom: 3%;
     letter-spacing: 1px;
+    width: fit-content;
 }
 
 .page12 .bottom .right{
