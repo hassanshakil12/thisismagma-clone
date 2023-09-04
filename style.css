@@ -660,6 +660,7 @@ html, body{
 
 .page12 .top{
     padding: 8.5% 0 7.5% 9%;
+    position: relative;
 }
 
 .page12 .top>h1{
@@ -671,15 +672,44 @@ html, body{
 }
 
 .page12 button{
-    background-color: #0B3CCC;
+    background-color: white;
     color: #fff;
     padding: 1% 2.7%;
     border-radius: 100px;
-    font-size: 17px;
     border: none;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.page12 button p{
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 1px;
+    font-size: 17px;
+    transition: all ease 0.3s;
+    transition-delay: 0.2s;
+    position: relative;
+}
+
+.page12 button:hover p{
+    color: #0B3CCC;
+}
+
+.page12 button::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: #0B3CCC;
+    position: absolute;
+    transition: all ease 0.3s;
+    transition-delay: 0.2s;
+}
+
+.page12 button:hover::before{
+    height: 0;
 }
 
 .page12 .middle{
@@ -695,6 +725,28 @@ html, body{
     border-top: 1px solid rgb(73, 73, 73);
     font-size: 22px;
     transition: all ease 0.5s;
+    position: relative;
+    background-color: #0B3CCC;
+    cursor: pointer;
+}
+
+.page12 .middle .elem h1, i{
+    position: relative ;
+}
+
+.page12 .middle .elem::before{
+    content: '';
+    background-color: #0F0F17;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all ease 0.5s;
+}
+
+.page12 .middle .elem:hover::before{
+    height: 0;
 }
 
 .page12 .middle .elem:last-child{
