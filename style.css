@@ -726,27 +726,28 @@ html, body{
     font-size: 22px;
     transition: all ease 0.5s;
     position: relative;
-    background-color: #0B3CCC;
+    background-color: #0F0F17;
     cursor: pointer;
 }
 
 .page12 .middle .elem h1, i{
-    position: relative ;
+    position: relative ;transition: all ease 0.5s;
 }
 
 .page12 .middle .elem::before{
     content: '';
-    background-color: #0F0F17;
+    background-color: #0B3CCC;
     width: 100%;
-    height: 100%;
+    height: 0%;
     position: absolute;
-    left: 0;
-    top: 0;
+    left: 50%;
+    top: 50%;
     transition: all ease 0.5s;
+    transform: translate(-50%, -50%);
 }
 
 .page12 .middle .elem:hover::before{
-    height: 0;
+    height: 100%;
 }
 
 .page12 .middle .elem:last-child{
